@@ -33,9 +33,6 @@ public class Main {
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);
 		
-		FileInputStream fis= new FileInputStream("");
-		BufferedInputStream bis= new BufferedInputStream(fis);
-		
 		StringBuilder stringbuilder= new StringBuilder();
 		Iterator<Element> i0= Jsoup.parse(new String(Files.readAllBytes(Paths.get("C:\\Temp\\Duolingo _ Learn Korean for free.html")))).getElementsByClass("L5bZP").iterator();
 		while (i0.hasNext()) {
